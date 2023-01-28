@@ -1,0 +1,38 @@
+@import '../common/var';
+@import '../mixins/mixins';
+
+@include b('container') {
+  width: 220px;
+  height: 100%;
+  background: #2a2f37;
+  overflow-y: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  @include e(title) {
+    margin-left: 10px;
+  }
+}
+
+@include b ('menuTile'){
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 13px 0 13px 20px;
+}
+
+.el-menu {
+    border-right: none!important;
+}
+.el-menu-vertical {
+    width: 220px!important;
+}
+.el-menu-item.is-active{
+  color:#fff!important;
+  background-color: #101318!important;
+}
+.el-menu-item-group__title{
+  display: none;
+}
+.el-sub-menu .el-menu-item{
+  background-color: #2a2f37;
+}
